@@ -1,5 +1,5 @@
 # JPK-VDEK
-Prosty program do wysyłania JPK VAT z deklaracją.
+Prosty program do wysyłania JPK VAT z deklaracją (https://jpk-vdek.herokuapp.com/).
 
 ## Wstęp
 Od 1 października 2020 r. wszyscy podatnicy zarejestrowani jako czynni podatnicy
