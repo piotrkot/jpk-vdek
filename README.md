@@ -16,4 +16,38 @@ schematami XSD, odpowiedniej kompresji danych i ich właściwego zaszyfrowania.
 
 W tym celu powstał ten program.
 
-cdn.
+## Licencja
+
+Program jest na warunkach Powszechnej Licencji Publicznej GNU wersja 3 lub nowsza (http://www.gnu.org/licenses/gpl.html).
+
+## Wymagania
+
+Do poprawnego działania programu wymagane jest środowisko Java (Java Runtime Environment, JRE)
+w wersji 8 lub nowszej.
+
+## Instalacja
+
+Pobierz program `jpk-vdek.zip` z https://github.com/piotrkot/jpk-vdek/releases.
+
+Rozpakuj plik `jpk-vdek.zip` do katalogu `jpk-vdek`.
+
+### Windows
+
+Uruchom plik `jpk-vdek.bat` z katalogu `jpk-vdek`.
+
+### Linux
+
+Uruchom plik `jpk-vdek.sh` z katalogu `jpk-vdek`.
+
+## Zrzuty ekranu
+
+...
+
+## Film pokazowy
+
+...
+
+## Kontakt
+
+jpk.vdek@gmail.com
+
