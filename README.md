@@ -41,7 +41,8 @@ Uruchom plik `jpk-vdek.sh` z katalogu `jpk-vdek`.
 
 ## Zrzuty ekranu
 
-...
+![Alt text](screens/Ekran wstępny - wprowadzanie danych podatnika.png?raw=true "Title")
+
 
 ## Film pokazowy
 
