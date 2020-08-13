@@ -44,8 +44,7 @@ Uruchom plik `jpk-vdek.sh` z katalogu `jpk-vdek`.
 ![](../master/screens/Ekran%20wstępny%20-%20wprowadzanie%20danych%20podatnika.png?raw=true "Ekran wstępny - wprowadzanie danych podatnika/użytkownika")
 ![](../master/screens/Ekran%20główny%20-%20autouzupełnienie%20urzędu.png?raw=true "Ekran główny - autouzupełnienie urzędu")
 ![](../master/screens/Ekran%20główny%20-%20sprzedaż%20-%20podpowiedź%20kontrahenta.png?raw=true "Ekran główny - sprzedaż - podpowiedź kontrahenta")
-![](../master/screens/Ekran%20główny%20-%20zakup%20-%20podpowiedź%20postawcy.png?raw=true "Ekran główny - zakup - podpowiedź dostawcy")
-![](../master/screens/Ekran%20główny%20-%20wysyłka.png?raw=true "Ekran główny - wysyłka")
+![](../master/screens/Ekran%20główny%20-%20zakup%20-%20podpowiedź%20dostawcy.png?raw=true "Ekran główny - zakup - podpowiedź dostawcy")
 ![](../master/screens/Ekran%20główny%20-%20wysyłka%20-%20progres.png?raw=true "Ekran główny - wysyłka - progres")
 ![](../master/screens/Ekran%20główny%20-%20wysyłka%20-%20sukces.png?raw=true "Ekran główny - wysyłka - sukces")
 
