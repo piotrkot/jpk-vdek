@@ -39,6 +39,33 @@ Uruchom plik `jpk-vdek.bat` z katalogu `jpk-vdek`.
 
 Uruchom plik `jpk-vdek.sh` z katalogu `jpk-vdek`.
 
+## Środowisko testowe
+
+Ministerstwo Finansów udostępniło środowisko testowe do wysyłania JPK-VDEK. Aby program połączył się ze środowiskiem testowym należy:
+
+- dla systemu Windows:
+
+W pliku `jpk-vdek.bat` zamienić
+
+`set ENV=PROD`
+
+na
+
+`set ENV=TEST`
+
+- dla systemu Linux:
+
+w pliku `jpk-vdek.sh` zamienić
+
+`export ENV=PROD`
+
+na
+
+`export ENV=TEST`
+
+W tym środowisku dane podatnika mogą być dowolne, jednak jedynie NIP parzysty pozwoli z powodzeniem zakończyć wysyłkę. Dla nieparzystej wartości NIP pojawi się błąd.
+
+
 ## Zrzuty ekranu
 
 ![](../master/screens/Ekran%20wstępny%20-%20wprowadzanie%20danych%20podatnika.png?raw=true "Ekran wstępny - wprowadzanie danych podatnika/użytkownika")
