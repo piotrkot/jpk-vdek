@@ -27,19 +27,27 @@ w wersji 8 lub nowszej.
 
 ## Instalacja
 
-Pobierz program `jpk-vdek.zip` z https://github.com/piotrkot/jpk-vdek/releases.
+Program ma dwie wersje:
 
-Rozpakuj plik `jpk-vdek.zip` do katalogu `jpk-vdek`.
+- DeskApp - Program graficzny do interaktywnego tworzenia ewidencji i deklaracji VAT, utrzymywania listy dostawców i kontrahentów, zarządzania wersjami roboczymi, podpowiedziami podczas wypełniania treścią, i wysyłania dokumentów do Ministerstwa Finansów.
 
-### Windows
+- ConsoleApp - Program z wiersza poleceń do wysyłania gotowych dokumentów do Ministerstwa Finansów.
 
-Uruchom plik `jpk-vdek.bat` z katalogu `jpk-vdek`.
+### DeskApp
 
-### Linux
+Pobierz program `deskapp.zip` z https://github.com/piotrkot/jpk-vdek/releases.
 
-Uruchom plik `jpk-vdek.sh` z katalogu `jpk-vdek`.
+Rozpakuj plik `deskapp.zip` do katalogu `deskapp`.
 
-## Środowisko testowe
+#### Windows
+
+Uruchom plik `jpk-vdek.bat` z katalogu `deskapp`.
+
+#### Linux
+
+Uruchom plik `jpk-vdek.sh` z katalogu `deskapp`.
+
+### Środowisko testowe
 
 Ministerstwo Finansów udostępniło środowisko testowe do wysyłania JPK-VDEK. Aby program połączył się ze środowiskiem testowym należy:
 
@@ -66,7 +74,7 @@ na
 W tym środowisku dane podatnika mogą być dowolne, jednak jedynie NIP parzysty pozwoli z powodzeniem zakończyć wysyłkę. Dla nieparzystej wartości NIP pojawi się błąd.
 
 
-## Zrzuty ekranu
+### Zrzuty ekranu
 
 ![](../master/screens/Ekran%20wstępny%20-%20wprowadzanie%20danych%20podatnika.png?raw=true "Ekran wstępny - wprowadzanie danych podatnika/użytkownika")
 ![](../master/screens/Ekran%20główny%20-%20autouzupełnienie%20urzędu.png?raw=true "Ekran główny - autouzupełnienie urzędu")
@@ -75,9 +83,31 @@ W tym środowisku dane podatnika mogą być dowolne, jednak jedynie NIP parzysty
 ![](../master/screens/Ekran%20główny%20-%20wysyłka%20-%20progres.png?raw=true "Ekran główny - wysyłka - progres")
 ![](../master/screens/Ekran%20główny%20-%20wysyłka%20-%20sukces.png?raw=true "Ekran główny - wysyłka - sukces")
 
-## Film pokazowy
+## ConsoleApp
 
-...
+Pobierz program `consoleapp.zip` z https://github.com/piotrkot/jpk-vdek/releases.
+
+Rozpakuj plik `consoleapp.zip` do katalogu `consoleapp`.
+
+#### Windows
+
+Uruchom plik `jpk-vdek-cmd.bat` z katalogu `consoleapp`.
+
+#### Linux
+
+Uruchom plik `jpk-vdek-cmd.sh` z katalogu `consoleapp`.
+
+### Opcje użycia
+
+- `--help` - Wyświetlenie komunikatu pomocy.
+- `--test` - Użycie środowiska testowego Ministerstwa Finansów. Bez tej opcji użyte zostanie środowisko produkcyjne. W środowisku testowym wysłanie dokumentu zakończy się sukcesem jedynie dla parzystych wartości NIP.
+- `--out=<katalog>` - Wskazanie katalogu do zapisu UPO. Bez tej opcji użyty zostanie katalog bieżący.
+- `--doc=<dokument>` - Wskazanie dokumentu JPK z Deklaracją do wysłania.
+- `--auth=<kwota>` - Wskazanie kwoty przychodu wykazanej w zeznaniu za rok przedostatni (np. dnia 25.04.2020 będzie to rok 2018).
+
+### Przykład
+
+`$> jpk-vdek-cmd.sh --test --out=/tmp --doc=jpk.xml --auth=10,50`
 
 ## Kontakt
 
