@@ -73,6 +73,18 @@ na
 
 W tym środowisku dane podatnika mogą być dowolne, jednak jedynie NIP parzysty pozwoli z powodzeniem zakończyć wysyłkę. Dla nieparzystej wartości NIP pojawi się błąd.
 
+## Aktualizacja
+
+Można wykonać aktualizację programu do nowej wersji nie tracąc przy tym danych ze starej wersji. Program podczas pracy tworzy katalog `config` w miejscu, gdzie został zainstalowany (rozpakowany). W katalogu `config` znajdują się:
+
+- `taxpayer.xml` - informacje o płatniku
+- `config.xml` - konfiguracja programu
+- `cache.xml` - pamięć podręczna z danymi o dostawcach i kontrahentach
+- `drafts/` - katolog z wersjami roboczymi
+
+Jeśli stara wersja programu ma ten sam numer główny (major) co wersja nowa (przykładowo aktualizacja z wersji 1.1 do wersji 1.6), wystarczy skopiować katalog `config` do nowej lokalizacji i wszystkie dane ze starej wersji będą automatycznie przeniesione.
+
+Jeśli stara wersja programu ma inny numer główny (major) co wersja nowa (przykładowo aktualizacja z wersji 0.2 do wersji 1.6), poza skopiowaniem katalogu `config` do nowej lokalizacji należy nanieść pewne ręczne zmiany na plikach z katalogu `config`. Wymagane zmiany są zawsze opisane w pierwszej wersji o nowym numerze głównym (np. 1.0, 2.0).
 
 ### Zrzuty ekranu
 
