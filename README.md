@@ -18,7 +18,7 @@ W tym celu powstał ten program.
 
 ## Licencja
 
-Program jest na warunkach Powszechnej Licencji Publicznej GNU wersja 3 lub nowsza (http://www.gnu.org/licenses/gpl.html).
+Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 3.0 Unported (CC BY-NC-ND 3.0) (https://creativecommons.org/licenses/by-nc-nd/3.0/deed.pl)
 
 ## Wymagania
 
