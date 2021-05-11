@@ -115,11 +115,20 @@ Uruchom plik `jpk-vdek-cmd.sh` z katalogu `consoleapp`.
 - `--test` - Użycie środowiska testowego Ministerstwa Finansów. Bez tej opcji użyte zostanie środowisko produkcyjne. W środowisku testowym wysłanie dokumentu zakończy się sukcesem jedynie dla parzystych wartości NIP.
 - `--out=<katalog>` - Wskazanie katalogu do zapisu UPO. Bez tej opcji użyty zostanie katalog bieżący.
 - `--doc=<dokument>` - Wskazanie dokumentu JPK z Deklaracją do wysłania.
-- `--auth=<kwota>` - Wskazanie kwoty przychodu wykazanej w zeznaniu za rok przedostatni (np. dnia 25.04.2020 będzie to rok 2018).
+- `--auth-income=<kwota>` - Wskazanie kwoty przychodu wykazanej w zeznaniu za rok przedostatni (np. dnia 25.04.2020 będzie to rok 2018). Brak tej opcji wymaga podania `--auth-signature-pkcs12` lub `--auth-signature-pkcs11`.
+- `--auth-signature-pkcs12=<ścieżka do pliku PKCS#12>` - Wskazanie pliku PKCS#12 zawierającego certyfikat(y) do podpisu kwalifikowanego. Wymagana jest bezwzględna ścieżka do pliku PKCS#12. Brak tej opcji wymaga podania `--auth-signature-pkcs11` lub `--auth-income`.
+- `--storepass-pkcs12=<hasło do pliku PKCS#12>` - Hasło dostępu do pliku PKCS#12. Bez tej opcji hasło będzie odczytane ze standardowego wejścia (stdin).
+- `--auth-signature-pkcs11=<ścieżka do pliku biblioteki PKCS#11>` - Wskazanie pliku natywnej biblioteki PKCS#11. Biblioteka zawiera implementację PKCS#11 i jest dostarczana z kartą kryptograficzną. Dla OS Linux/Solaris biblioteka ma rozszerzenie .so, dla OS Windows - .dll. Wymagana jest bezwzględna ścieżka do pliku PKCS#11. Brak tej opcji wymaga podania `--auth-income` lub `--auth-signature-pkcs12`.
 
-### Przykład
+### Przykłady
 
-`$> jpk-vdek-cmd.sh --test --out=/tmp --doc=jpk.xml --auth=10,50`
+`$> jpk-vdek-cmd --test --out=/tmp --doc=jpk.xml --auth-income=10,50`
+
+`$> jpk-vdek-cmd --doc=jpk.xml --auth-signature-pkcs12="/home/store.pfx"`
+
+`$> jpk-vdek-cmd --doc=jpk.xml --auth-signature-pkcs11="/opt/libp11.so"`
+
+`$> jpk-vdek-cmd --doc=jpk.xml --auth-signature-pkcs11="C:\libp11.dll"`
 
 ## Kontakt
 
