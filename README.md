@@ -1,6 +1,9 @@
 # JPK-VDEK
 Prosty program do wysyłania JPK VAT z deklaracją (https://jpk-vdek.herokuapp.com/).
 
+> [!IMPORTANT]
+> Wersja 3.0.0 ze wsparciem dla systemu KSeF jest już dostępna. Proszę o wysyłanie zapytań na adres email - jpk.vdek@gmail.com
+
 ## Wstęp
 Od 1 października 2020 r. wszyscy podatnicy zarejestrowani jako czynni podatnicy
 VAT muszą obowiązkowo składać JPK_VAT z Deklaracją (JPK-VDEK).
